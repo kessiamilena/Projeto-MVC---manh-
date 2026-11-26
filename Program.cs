@@ -1,5 +1,7 @@
 using Bibliotec_MVC___manha.Data;
+using Bibliotec_MVC___manha.Models;
 using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -33,7 +35,34 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
 
 builder.Services.AddAuthorization();
 
+builder.Services.AddScoped<IPasswordHasher<Usuario>, PasswordHasher<Usuario>>();
+
 var app = builder.Build();
+
+// //! CODIGO TEMPORÁRIO PARA MUDAR AS SENHAS DO BANCO PARA HASH
+// // Código temporário para atualizar as senhas de teste.
+// using (var scope = app.Services.CreateScope())
+// {
+//     // Obtém o contexto do banco de dados.
+//     var contexto = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+
+//     // Obtém o serviço responsável pela geração do hash.
+//     var passwordHasher = scope.ServiceProvider.GetRequiredService<IPasswordHasher<Usuario>>();
+
+//     // Busca os usuários que ainda possuem a senha de teste em texto puro.
+//     var usuarios = contexto.Usuario
+//         .Where(u => u.Senha == "123456")
+//         .ToList();
+
+//     foreach (var usuario in usuarios)
+//     {
+//         // Gera o hash da senha do usuário.
+//         usuario.Senha = passwordHasher.HashPassword(usuario, usuario.Senha);
+//     }
+
+//     // Salva as alterações no banco de dados.
+//     contexto.SaveChanges();
+// }
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
