@@ -235,4 +235,6 @@ C:\Users\Senaisp\Desktop\Bibliotec MVC - manha\obj\Debug\net10.0\compressed\jaa9
 C:\Users\Senaisp\Desktop\Bibliotec MVC - manha\obj\Debug\net10.0\compressed\6nezd2l64o-{0}-yo9670r92y-yo9670r92y.gz
 C:\Users\Senaisp\Desktop\Bibliotec MVC - manha\obj\Debug\net10.0\compressed\zbv815hppu-{0}-uxje27x630-uxje27x630.gz
 C:\Users\Senaisp\Desktop\Bibliotec MVC - manha\obj\Debug\net10.0\compressed\bsesq4u7ac-{0}-srrls8eled-srrls8eled.gz
-C:\Users\Senaisp\Desktop\Bibliotec MVC - manha\obj\Debug\net10.0\compressed\dkh9faaxh7-{0}-sjy9k82gkd-sjy9k82gkd.gz
+C:\Users\Senaisp\Desktop\Bibliotec MVC - manha\bin\Debug\net10.0\DotNetEnv.dll
+C:\Users\Senaisp\Desktop\Bibliotec MVC - manha\bin\Debug\net10.0\Superpower.dll
+C:\Users\Senaisp\Desktop\Bibliotec MVC - manha\obj\Debug\net10.0\compressed\dkh9faaxh7-{0}-6d2fbgxhne-6d2fbgxhne.gz

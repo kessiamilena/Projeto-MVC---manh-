@@ -17,13 +17,13 @@ public partial class Livro
 
     public string? CaminhoImagem { get; set; }
 
-    public int IdAutor { get; set; }
+    public int IdAutor { get; set; } 
 
     public int IdStatus { get; set; }
 
     public virtual ICollection<Favoritos> Favoritos { get; set; } = new List<Favoritos>();
 
-    public virtual Autor IdAutorNavigation { get; set; } = null!;
+    public virtual Autor IdAutorNavigation { get; set; } = null!; 
 
     public virtual Status IdStatusNavigation { get; set; } = null!;
 

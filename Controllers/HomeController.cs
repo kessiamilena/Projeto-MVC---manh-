@@ -1,11 +1,13 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using Bibliotec_MVC___manha.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Bibliotec_MVC___manha.Controllers;
 
 public class HomeController : Controller
 {
+    [Authorize] // somente pessoas autenticadas/autorizadas entram
     public IActionResult Index()
     {
         return View();
